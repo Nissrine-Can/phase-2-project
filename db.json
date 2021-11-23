@@ -1,0 +1,174 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lotus_Omega_Nr.460.JPG",
+      "name": "Lotus Carlton",
+      "price": "$74,000",
+      "year": 1990,
+      "engine": "Twin turbo inline 6",
+      "description": "Drivetrain - Rear wheel drive",
+      "enthusiastType": "Mechanic/ Tuner",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 10,
+          "content": "This vehicle is very easy to steel. It has very heavy clutch and a bit squirely"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://bringatrailer.com/wp-content/uploads/2019/06/1996_porsche_911_turbo_15621028351f941082at0011-993-turbo-red-7-e1562102873437.jpg?fit=940%2C626",
+      "name": "Porche 911 993 Turbo",
+      "price": "$105,000",
+      "year": 1990,
+      "engine": "Single Turbo Flat 6",
+      "description": "Drivetrain - Rear wheel drive",
+      "enthusiastType": "Mechanic/ Tuner",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 20,
+          "content": "The car is quick around the corners and handles very well!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/SainzFinland1996.JPG",
+      "name": "Ford Escort Cosworth",
+      "price": "$49,000",
+      "year": 1993,
+      "engine": "2Liter Turbo 4 cylinder",
+      "description": "Drivetrain - 4 wheel drive",
+      "enthusiastType": "Mechanic/ Tuner",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 40,
+          "content": "Fast, light and zippy!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/2017_Tesla_Model_X_100D_Front.jpg/2880px-2017_Tesla_Model_X_100D_Front.jpg",
+      "name": "Tesla Model X",
+      "price": "$79,990",
+      "year": 2021,
+      "engine": "Dual Motor",
+      "description": "Drivetrain - 4 wheel drive",
+      "enthusiastType": "Luxury",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 50,
+          "content": "Fast, 0 to 60 mph in 3.8 seconds!"
+        },
+        {
+          "user_id": 51,
+          "content": "Falcon wings and auto pilot features are impressive!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "https://cdn.motor1.com/images/mgl/J4RM6/s1/2021-ford-bronco.jpg",
+      "name": "Ford Bronco",
+      "price": "$29,995",
+      "year": 2020,
+      "engine": "2Liter 4 cylinder",
+      "description": "Drivetrain - All wheel drive",
+      "enthusiastType": "Thrill Seeker",
+      "liked": true,
+      "reviews": [
+        {
+          "user_id": 60,
+          "content": "Smooth off road drive!"
+        },
+        {
+          "user_id": 61,
+          "content": "It goes on all terrains easily!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image": "https://bringatrailer.com/wp-content/uploads/2020/05/2006_lamborghini_gallardo_1590156717b75fe8d2B4737D0A-EDDE-4AC9-98BE-3D837ED96CB5.jpeg?fit=940%2C627",
+      "name": "Lamborghini Gallardo",
+      "price": "$66,752",
+      "year": 2006,
+      "engine": "5.0 Liter V10",
+      "description": "Drivetrain - All wheel drive",
+      "enthusiastType": "Exotic Car",
+      "liked": true,
+      "reviews": [
+        {
+          "user_id": 70,
+          "content": "Suprisingly faster than newer models!"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "image": "https://cdn.motor1.com/images/mgl/622lX/s1/2018-ford-expedition-first-drive.jpg",
+      "name": "Ford Expedition",
+      "price": "$55,000",
+      "year": 2021,
+      "engine": "3.5 Liter V6",
+      "description": "Drivetrain - All wheel drive",
+      "enthusiastType": "Road Tripper",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 80,
+          "content": "Great long distance performance and gas mileage!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2017_McLaren_570S%2C_blue%2C_front_left.jpg/1920px-2017_McLaren_570S%2C_blue%2C_front_left.jpg",
+      "name": "Mclaren 570s",
+      "price": "$185,000",
+      "year": 2015,
+      "engine": "3.8 Liter Twin Turbo Charge V8",
+      "description": "Drivetrain - Rear wheel drive",
+      "enthusiastType": "Track Addict",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 81,
+          "content": "Fast car with good drifts!"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/2018_Ferrari_488_Pista_%2842706918214%29.jpg/2560px-2018_Ferrari_488_Pista_%2842706918214%29.jpg",
+      "name": "Ferrari 488 pista",
+      "price": "330,000",
+      "year": 2020,
+      "engine": "3.9 Liter Twin Turbo Charge V8",
+      "description": "Drivetrain - Rear wheel drive",
+      "enthusiastType": "Driver Skill",
+      "liked": false,
+      "reviews": [
+        {
+          "user_id": 82,
+          "content": "A beautiful piece of Italian engineering. 0 to 60mph in 3.3 seconds!!"
+        }
+      ]
+    }
+  ],
+  "enthusiastTypes": [
+    "Luxury",
+    "Road Tripper",
+    "Mechanic/ Tuner",
+    "Track Addict",
+    "Thrill Seeker",
+    "Driver Skill",
+    "Exotic Car"
+  ]
+}
