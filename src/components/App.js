@@ -13,8 +13,12 @@ import CarContainer  from "./CarContainer";
 
   const [enthusiastTypes, setEnthusiastTypes] = useState([]);
   const [carList, setCarList] = useState([]);
-  const [fullCarList, setFullCarList] = useState([]);
-
+  const [enthusiastType, setEnthusiastType] = useState("")
+  
+  let filteredCarList = carList.filter(car => car.enthusiastType.toLowerCase() === enthusiastType.toLowerCase()) 
+  if (!enthusiastType) {
+    filteredCarList = carList
+  }
   const history = useHistory();
   
 
@@ -23,13 +27,11 @@ import CarContainer  from "./CarContainer";
    .then(res => res.json())
    .then(data => {
      setCarList(data)
-     setFullCarList(data)
    })
    
    fetch("http://localhost:4000/enthusiastTypes")
    .then(res => res.json())
    .then(data => setEnthusiastTypes(data))
-   
 }, [])
 
   function addCar(newCar) {
@@ -49,7 +51,7 @@ import CarContainer  from "./CarContainer";
   }
 
   function updateCar(car) {
-    
+
     fetch(`http://localhost:4000/cars/${car.id}`,{
       method: "PATCH",
       headers:{
@@ -67,7 +69,6 @@ import CarContainer  from "./CarContainer";
         }
       })
       setCarList(updatedCarList)
-      setFullCarList(updatedCarList)
     })
     
   }
@@ -86,8 +87,7 @@ import CarContainer  from "./CarContainer";
   
 
 function handleFilteredCars(enthusiastType) {
-     const filteredCars = fullCarList.filter(car => car.enthusiastType.toLowerCase() === enthusiastType.toLowerCase())
-     setCarList(filteredCars)
+     setEnthusiastType(enthusiastType)
 }
 
 
@@ -106,7 +106,7 @@ function handleFilteredCars(enthusiastType) {
           </Route>
 
           <Route path='/cars'>
-             <CarContainer carList={carList} enthusiastTypes={enthusiastTypes} updateCar={updateCar} handleFilteredCars={handleFilteredCars}/>
+             <CarContainer carList={filteredCarList} enthusiastTypes={enthusiastTypes} updateCar={updateCar} handleFilteredCars={handleFilteredCars}/>
           </Route>
 
       </Switch>  
