@@ -48,8 +48,8 @@ import CarContainer  from "./CarContainer";
 
   }
 
-  function updateCar(e, car) {
-    e.stopPropagation()
+  function updateCar(car) {
+    
     fetch(`http://localhost:4000/cars/${car.id}`,{
       method: "PATCH",
       headers:{

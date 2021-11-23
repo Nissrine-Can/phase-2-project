@@ -15,7 +15,7 @@ import {Link} from 'react-router-dom';
                     <img className="img-circle" src={car.image} alt={car.name} />
                     <div className="caption">
                         <h3>{car.name}</h3>
-                        {<button className="btn btn-default" onClick={(e) => updateCar(e, car)}>{car.liked? "❤️" : "🤍"}</button>}
+                        {<button className="btn btn-default" onClick={() => updateCar(car)}>{car.liked? "❤️" : "🤍"}</button>}
                         <h4>Model: {car.year}</h4>
                         <h4>Price: {car.price}</h4>
                         <Link to={`/cars/${car.id}`} className="btn btn-primary">Learn more</Link>

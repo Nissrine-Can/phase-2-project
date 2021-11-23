@@ -8,12 +8,12 @@
       "year": 1990,
       "engine": "Twin turbo inline 6",
       "description": "Drivetrain - Rear wheel drive",
-      "enthusiastType": "Mechanic/ Tuner",
+      "enthusiastType": "Road Tripper",
       "liked": false,
       "reviews": [
         {
           "user_id": 10,
-          "content": "This vehicle is very easy to steel. It has very heavy clutch and a bit squirely"
+          "content": "This vehicle is very easy to steel. It has very heavy clutch and a bit squirely."
         }
       ]
     },
@@ -81,7 +81,7 @@
       "engine": "2Liter 4 cylinder",
       "description": "Drivetrain - All wheel drive",
       "enthusiastType": "Thrill Seeker",
-      "liked": true,
+      "liked": false,
       "reviews": [
         {
           "user_id": 60,
@@ -102,7 +102,7 @@
       "engine": "5.0 Liter V10",
       "description": "Drivetrain - All wheel drive",
       "enthusiastType": "Exotic Car",
-      "liked": true,
+      "liked": false,
       "reviews": [
         {
           "user_id": 70,
