@@ -7,14 +7,17 @@ import Header from "./Header";
 import Form from "./Form";
 import CarDetails from "./CarDetails";
 import CarContainer  from "./CarContainer";
+import CounterForm from './CounterForm';
 
 
  function App() {
 
   const [enthusiastTypes, setEnthusiastTypes] = useState([]);
   const [carList, setCarList] = useState([]);
-  const [enthusiastType, setEnthusiastType] = useState("")
+  const [enthusiastType, setEnthusiastType] = useState("");
+
   
+
   let filteredCarList = carList.filter(car => car.enthusiastType.toLowerCase() === enthusiastType.toLowerCase()) 
   if (!enthusiastType) {
     filteredCarList = carList
@@ -91,6 +94,7 @@ function handleFilteredCars(enthusiastType) {
 }
 
 
+
   return (
     <div>
       <Header  businessName="Enthusiast Dealership" />
@@ -98,7 +102,7 @@ function handleFilteredCars(enthusiastType) {
       <Switch>
 
           <Route path='/cars/new'>
-            <Form addCar={addCar} /> 
+            <Form  addCar={addCar} /> 
           </Route>
 
           <Route path='/cars/:id'>
@@ -106,6 +110,7 @@ function handleFilteredCars(enthusiastType) {
           </Route>
 
           <Route path='/cars'>
+            <CounterForm />
              <CarContainer carList={filteredCarList} enthusiastTypes={enthusiastTypes} updateCar={updateCar} handleFilteredCars={handleFilteredCars}/>
           </Route>
 
@@ -113,7 +118,12 @@ function handleFilteredCars(enthusiastType) {
           
     </div>
   );
+
 }
+
+
+
+
 export default App;
 
 

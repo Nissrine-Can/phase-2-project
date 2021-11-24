@@ -1,3 +1,6 @@
+create a form where to type text and when I submit the counter increment by the number of letters submitted.
+
+
 The Enthusiast Dealership App is a React CRUD application. It is composed of 6 components following this hierarchy:
 
                                       App
